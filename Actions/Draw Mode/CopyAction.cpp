@@ -1,4 +1,4 @@
-#include "../../ApplicationManager.h"
+#include "../../Application Manager/ApplicationManager.h"
 
 
 CopyAction::CopyAction(ApplicationManager * pApp):Action(pApp)

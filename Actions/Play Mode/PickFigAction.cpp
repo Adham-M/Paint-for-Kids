@@ -1,4 +1,4 @@
-#include "../../ApplicationManager.h"
+#include "../../Application Manager/ApplicationManager.h"
 
 
 PickFigAction::PickFigAction(ApplicationManager *pApp):Action(pApp) , Figure(pManager->GetRandFig())

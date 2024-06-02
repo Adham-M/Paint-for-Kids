@@ -152,6 +152,7 @@
     <ClCompile Include="Actions\Save-Load\LoadAction.cpp" />
     <ClCompile Include="Actions\Save-Load\SaveAction.cpp" />
     <ClCompile Include="Actions\Save-Load\SaveByTypeAction.cpp" />
+    <ClCompile Include="Application Manager\ApplicationManager.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp" />
     <ClCompile Include="CMUgraphicsLib\CMUgraphics.cpp" />
     <ClCompile Include="CMUgraphicsLib\colors.cpp" />
@@ -196,7 +197,6 @@
     <ClCompile Include="Figures\CTriangle.cpp" />
     <ClCompile Include="GUI\Input.cpp" />
     <ClCompile Include="GUI\Output.cpp" />
-    <ClCompile Include="ApplicationManager.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -223,6 +223,7 @@
     <ClInclude Include="Actions\Save-Load\LoadAction.h" />
     <ClInclude Include="Actions\Save-Load\SaveAction.h" />
     <ClInclude Include="Actions\Save-Load\SaveByTypeAction.h" />
+    <ClInclude Include="Application Manager\ApplicationManager.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h" />
     <ClInclude Include="CMUgraphicsLib\CMUgraphics.h" />
     <ClInclude Include="CMUgraphicsLib\colors.h" />
@@ -253,7 +254,6 @@
     <ClInclude Include="GUI\Input.h" />
     <ClInclude Include="GUI\Output.h" />
     <ClInclude Include="GUI\UI_Info.h" />
-    <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="DEFS.h" />
   </ItemGroup>
   <ItemGroup>

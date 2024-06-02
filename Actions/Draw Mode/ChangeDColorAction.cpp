@@ -1,4 +1,4 @@
-#include "../../ApplicationManager.h"
+#include "../../Application Manager/ApplicationManager.h"
 
 
 ChangeDColorAction::ChangeDColorAction(ApplicationManager * pApp) :Action(pApp)
