@@ -1,7 +1,6 @@
 #ifndef ADD_LINE_ACTION_H
 #define ADD_LINE_ACTION_H
 
-#include "Action.h"
 
 class AddLineAction : public Action
 {

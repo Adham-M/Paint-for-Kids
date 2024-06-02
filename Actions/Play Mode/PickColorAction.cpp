@@ -1,4 +1,4 @@
-#include "ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 PickColorAction::PickColorAction(ApplicationManager *pApp) : Action(pApp) , Color(pManager->GetRandColor())

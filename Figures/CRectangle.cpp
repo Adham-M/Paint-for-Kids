@@ -5,6 +5,7 @@ CRectangle::CRectangle(Point P1, Point P2, GfxInfo FigureGfxInfo):CFigure(Figure
 	Corner1 = P1;
 	Corner2 = P2;
 
+	// Push the corners to the drawing area if it's in the toolbar or the statusbar areas
 	if (P1.y < UI.ToolBarHeight + UI.ToolBarLineWidth)		Corner1.y = UI.ToolBarHeight + UI.ToolBarLineWidth;
 	else if (P1.y > UI.height - UI.StatusBarHeight - 1)		Corner1.y = UI.height - UI.StatusBarHeight - 1;
 	if (P2.y < UI.ToolBarHeight + UI.ToolBarLineWidth)		Corner2.y = UI.ToolBarHeight + UI.ToolBarLineWidth;

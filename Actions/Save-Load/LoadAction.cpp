@@ -1,4 +1,4 @@
-#include "ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 LoadAction::LoadAction(ApplicationManager *pApp) : Action(pApp)

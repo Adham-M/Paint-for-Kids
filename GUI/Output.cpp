@@ -11,7 +11,6 @@ Output::Output()
 	UI.wx = 5;
 	UI.wy = 5;
 
-
 	UI.StatusBarHeight = 50;
 	UI.ToolBarHeight = 50;
 	UI.MenuItemWidth = 75;
@@ -239,7 +238,7 @@ void Output::DrawRect(Point P1, Point P2, GfxInfo RectGfxInfo, bool selected) co
 	else
 		DrawingClr = RectGfxInfo.DrawClr;
 
-	pWind->SetPen(DrawingClr, 1);
+	pWind->SetPen(DrawingClr, UI.PenWidth);
 	drawstyle style;
 	if (RectGfxInfo.isFilled)
 	{
@@ -268,7 +267,7 @@ void Output::DrawTri(Point P1, Point P2, Point P3, GfxInfo TRIGfxInfo, bool sele
 	else
 		DrawingClr = TRIGfxInfo.DrawClr;
 
-	pWind->SetPen(DrawingClr, 1);
+	pWind->SetPen(DrawingClr, UI.PenWidth);
 	drawstyle style;
 	if (TRIGfxInfo.isFilled)
 	{
@@ -298,7 +297,7 @@ void Output::DrawLine(Point P1, Point P2, GfxInfo LINEGfxInfo, bool selected) co
 	else
 		DrawingClr = LINEGfxInfo.DrawClr;
 
-	pWind->SetPen(DrawingClr, 1);
+	pWind->SetPen(DrawingClr, UI.PenWidth);
 	drawstyle style;
 	style = FRAME;
 
@@ -323,7 +322,7 @@ void Output::DrawRhomb(Point P1, int xx, int yy, GfxInfo RHOMBGfxInfo, bool sele
 	else
 		DrawingClr = RHOMBGfxInfo.DrawClr;
 
-	pWind->SetPen(DrawingClr, 1);
+	pWind->SetPen(DrawingClr, UI.PenWidth);
 	drawstyle style;
 	style = FRAME;
 
@@ -363,7 +362,7 @@ void Output::DrawEllip(Point P1, int xx, int yy, GfxInfo ELLIPfxInfo, bool selec
 	else
 		DrawingClr = ELLIPfxInfo.DrawClr;
 
-	pWind->SetPen(DrawingClr, 1);
+	pWind->SetPen(DrawingClr, UI.PenWidth);
 	drawstyle style;
 	if (ELLIPfxInfo.isFilled)
 	{

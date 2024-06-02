@@ -9,11 +9,13 @@ ApplicationManager::ApplicationManager()
 	pIn = pOut->CreateInput();
 
 	FigCount = 0;
+	TempFigcount = 0;
 	OneIsSelected = false;
 	OneIsCopied = false;
 	OneIsCut = false;
 	SelectedFig = NULL;
 	Clipboard = NULL;
+
 	//TempFig = NULL;
 
 	//Create an array of figure pointers and set them to NULL		

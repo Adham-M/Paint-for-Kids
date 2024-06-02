@@ -1,4 +1,4 @@
-#include "ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 Set2BkOrFrntAction::Set2BkOrFrntAction(ApplicationManager* pApp, bool b) :Action(pApp)
 {

@@ -13,18 +13,18 @@
   <PropertyGroup Label="Globals">
     <ProjectName>PT Project</ProjectName>
     <ProjectGuid>{1AC3DDD7-FDDE-487E-A2A4-52A8FCF7BDB9}</ProjectGuid>
-    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v141</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <UseOfMfc>false</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -129,12 +129,29 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Actions\AddEllipAction.cpp" />
-    <ClCompile Include="Actions\AddLineAction.cpp" />
-    <ClCompile Include="Actions\AddRhombAction.cpp" />
-    <ClCompile Include="Actions\AddTriAction.cpp" />
-    <ClCompile Include="ChangeDColorAction.cpp" />
-    <ClCompile Include="ChangeFColorAction.cpp" />
+    <ClCompile Include="Actions\Add Figure\AddEllipAction.cpp" />
+    <ClCompile Include="Actions\Add Figure\AddLineAction.cpp" />
+    <ClCompile Include="Actions\Add Figure\AddRectAction.cpp" />
+    <ClCompile Include="Actions\Add Figure\AddRhombAction.cpp" />
+    <ClCompile Include="Actions\Add Figure\AddTriAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\ChangeDColorAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\ChangeFColorAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\CopyAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\CutAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\DeleteAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\ExitAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\PasteAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\ResizeAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\RestartAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\SelectAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\Set2BkOrFrntAction.cpp" />
+    <ClCompile Include="Actions\Draw Mode\ToPlayMode.cpp" />
+    <ClCompile Include="Actions\Play mode\PickColorAction.cpp" />
+    <ClCompile Include="Actions\Play mode\PickFigAction.cpp" />
+    <ClCompile Include="Actions\Play mode\ToDrawMode.cpp" />
+    <ClCompile Include="Actions\Save-Load\LoadAction.cpp" />
+    <ClCompile Include="Actions\Save-Load\SaveAction.cpp" />
+    <ClCompile Include="Actions\Save-Load\SaveByTypeAction.cpp" />
     <ClCompile Include="CMUgraphicsLib\auxil.cpp" />
     <ClCompile Include="CMUgraphicsLib\CMUgraphics.cpp" />
     <ClCompile Include="CMUgraphicsLib\colors.cpp" />
@@ -171,41 +188,41 @@
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant1.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jquant2.c" />
     <ClCompile Include="CMUgraphicsLib\jpeg\jutils.c" />
-    <ClCompile Include="CopyAction.cpp" />
-    <ClCompile Include="CutAction.cpp" />
-    <ClCompile Include="DeleteAction.cpp" />
-    <ClCompile Include="ExitAction.cpp" />
     <ClCompile Include="Figures\CEllipse.cpp" />
     <ClCompile Include="Figures\CFigure.cpp" />
     <ClCompile Include="Figures\Cline.cpp" />
     <ClCompile Include="Figures\CRectangle.cpp" />
-    <ClCompile Include="Actions\AddRectAction.cpp" />
     <ClCompile Include="Figures\CRhombus.cpp" />
     <ClCompile Include="Figures\CTriangle.cpp" />
     <ClCompile Include="GUI\Input.cpp" />
     <ClCompile Include="GUI\Output.cpp" />
     <ClCompile Include="ApplicationManager.cpp" />
-    <ClCompile Include="LoadAction.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="PasteAction.cpp" />
-    <ClCompile Include="PickColorAction.cpp" />
-    <ClCompile Include="PickFigAction.cpp" />
-    <ClCompile Include="ResizeAction.cpp" />
-    <ClCompile Include="RestartAction.cpp" />
-    <ClCompile Include="SaveAction.cpp" />
-    <ClCompile Include="SaveByTypeAction.cpp" />
-    <ClCompile Include="SelectAction.cpp" />
-    <ClCompile Include="Set2BkOrFrntAction.cpp" />
-    <ClCompile Include="ToDrawMode.cpp" />
-    <ClCompile Include="ToPlayMode.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Actions\AddEllipAction.h" />
-    <ClInclude Include="Actions\AddLineAction.h" />
-    <ClInclude Include="Actions\AddRhombAction.h" />
-    <ClInclude Include="Actions\AddTriAction.h" />
-    <ClInclude Include="ChangeDColorAction.h" />
-    <ClInclude Include="ChangeFColorAction.h" />
+    <ClInclude Include="Actions\Add Figure\AddEllipAction.h" />
+    <ClInclude Include="Actions\Add Figure\AddLineAction.h" />
+    <ClInclude Include="Actions\Add Figure\AddRectAction.h" />
+    <ClInclude Include="Actions\Add Figure\AddRhombAction.h" />
+    <ClInclude Include="Actions\Add Figure\AddTriAction.h" />
+    <ClInclude Include="Actions\Draw Mode\ChangeDColorAction.h" />
+    <ClInclude Include="Actions\Draw Mode\ChangeFColorAction.h" />
+    <ClInclude Include="Actions\Draw Mode\CopyAction.h" />
+    <ClInclude Include="Actions\Draw Mode\CutAction.h" />
+    <ClInclude Include="Actions\Draw Mode\DeleteAction.h" />
+    <ClInclude Include="Actions\Draw Mode\ExitAction.h" />
+    <ClInclude Include="Actions\Draw Mode\PasteAction.h" />
+    <ClInclude Include="Actions\Draw Mode\ResizeAction.h" />
+    <ClInclude Include="Actions\Draw Mode\RestartAction.h" />
+    <ClInclude Include="Actions\Draw Mode\SelectAction.h" />
+    <ClInclude Include="Actions\Draw Mode\Set2BkOrFrntAction.h" />
+    <ClInclude Include="Actions\Draw Mode\ToPlayMode.h" />
+    <ClInclude Include="Actions\Play mode\PickColorAction.h" />
+    <ClInclude Include="Actions\Play mode\PickFigAction.h" />
+    <ClInclude Include="Actions\Play mode\ToDrawMode.h" />
+    <ClInclude Include="Actions\Save-Load\LoadAction.h" />
+    <ClInclude Include="Actions\Save-Load\SaveAction.h" />
+    <ClInclude Include="Actions\Save-Load\SaveByTypeAction.h" />
     <ClInclude Include="CMUgraphicsLib\auxil.h" />
     <ClInclude Include="CMUgraphicsLib\CMUgraphics.h" />
     <ClInclude Include="CMUgraphicsLib\colors.h" />
@@ -226,16 +243,11 @@
     <ClInclude Include="CMUgraphicsLib\jpeg\jpegint.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jpeglib.h" />
     <ClInclude Include="CMUgraphicsLib\jpeg\jversion.h" />
-    <ClInclude Include="CopyAction.h" />
-    <ClInclude Include="CutAction.h" />
-    <ClInclude Include="DeleteAction.h" />
-    <ClInclude Include="ExitAction.h" />
     <ClInclude Include="Figures\CEllipse.h" />
     <ClInclude Include="Figures\CFigure.h" />
     <ClInclude Include="Figures\CLine.h" />
     <ClInclude Include="Figures\CRectangle.h" />
     <ClInclude Include="Actions\Action.h" />
-    <ClInclude Include="Actions\AddRectAction.h" />
     <ClInclude Include="Figures\CRhombus.h" />
     <ClInclude Include="Figures\CTriangle.h" />
     <ClInclude Include="GUI\Input.h" />
@@ -243,18 +255,6 @@
     <ClInclude Include="GUI\UI_Info.h" />
     <ClInclude Include="ApplicationManager.h" />
     <ClInclude Include="DEFS.h" />
-    <ClInclude Include="LoadAction.h" />
-    <ClInclude Include="PasteAction.h" />
-    <ClInclude Include="PickColorAction.h" />
-    <ClInclude Include="PickFigAction.h" />
-    <ClInclude Include="ResizeAction.h" />
-    <ClInclude Include="RestartAction.h" />
-    <ClInclude Include="SaveAction.h" />
-    <ClInclude Include="SaveByTypeAction.h" />
-    <ClInclude Include="SelectAction.h" />
-    <ClInclude Include="Set2BkOrFrntAction.h" />
-    <ClInclude Include="ToDrawMode.h" />
-    <ClInclude Include="ToPlayMode.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />

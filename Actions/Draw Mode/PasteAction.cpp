@@ -1,4 +1,4 @@
-#include"ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 PasteAction::PasteAction(ApplicationManager *pApp) :Action(pApp)

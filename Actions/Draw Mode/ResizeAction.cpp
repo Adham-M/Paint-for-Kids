@@ -1,4 +1,4 @@
-#include"ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 ResizeAction::ResizeAction(ApplicationManager* pApp, float f) :Action(pApp)
 {

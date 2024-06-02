@@ -1,4 +1,4 @@
-#include"ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 RestartAction::RestartAction(ApplicationManager*pApp) :Action(pApp)

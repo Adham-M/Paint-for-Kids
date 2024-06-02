@@ -2,8 +2,10 @@
 #define APPLICATION_MANAGER_H
 
 #include "DEFS.h"
-#include "Figures\CFigure.h"
-#include "GUI\input.h"
+#include "Figures/CFigure.h"
+#include "GUI/input.h"
+
+#include "Actions/Action.h"
 
 #include "Figures/CLine.h"
 #include "Figures/CRectangle.h"
@@ -11,30 +13,32 @@
 #include "Figures/CEllipse.h"
 #include "Figures/CRhombus.h"
 
-#include "Actions\AddRectAction.h"
-#include "Actions\AddLineAction.h"
-#include "Actions\AddTriAction.h"
-#include "Actions\AddRhombAction.h"
-#include "Actions\AddEllipAction.h"
-#include "SelectAction.h"
-#include "ChangeFColorAction.h"
-#include "ChangeDColorAction.h"
-#include "CopyAction.h"
-#include "PasteAction.h"
-#include "DeleteAction.h"
-#include "ToPlayMode.h"
-#include "PickFigAction.h"
-#include "PickColorAction.h"
-#include "RestartAction.h"
-#include "SaveAction.h"
-#include "SaveByTypeAction.h"
-#include "LoadAction.h"
-#include "CutAction.h"
-#include "ResizeAction.h"
-#include "Set2BkOrFrntAction.h"
-#include "ToDrawMode.h"
-#include "ExitAction.h"
+#include "Actions/Add Figure/AddRectAction.h"
+#include "Actions/Add Figure/AddLineAction.h"
+#include "Actions/Add Figure/AddTriAction.h"
+#include "Actions/Add Figure/AddRhombAction.h"
+#include "Actions/Add Figure/AddEllipAction.h"
 
+#include "Actions/Draw Mode/SelectAction.h"
+#include "Actions/Draw Mode/ChangeFColorAction.h"
+#include "Actions/Draw Mode/ChangeDColorAction.h"
+#include "Actions/Draw Mode/CopyAction.h"
+#include "Actions/Draw Mode/PasteAction.h"
+#include "Actions/Draw Mode/DeleteAction.h"
+#include "Actions/Draw Mode/ToPlayMode.h"
+#include "Actions/Draw Mode/RestartAction.h"
+#include "Actions/Draw Mode/CutAction.h"
+#include "Actions/Draw Mode/ResizeAction.h"
+#include "Actions/Draw Mode/Set2BkOrFrntAction.h"
+#include "Actions/Draw Mode/ExitAction.h"
+
+#include "Actions/Save-Load/SaveAction.h"
+#include "Actions/Save-Load/SaveByTypeAction.h"
+#include "Actions/Save-Load/LoadAction.h"
+
+#include "Actions/Play Mode/PickFigAction.h"
+#include "Actions/Play Mode/PickColorAction.h"
+#include "Actions/Play Mode/ToDrawMode.h"
 
 
 //Main class that manages everything in the application.

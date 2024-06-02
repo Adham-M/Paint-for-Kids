@@ -1,8 +1,6 @@
 #ifndef ADD_ELLIP_ACTION_H
 #define ADD_ELLIP_ACTION_H
 
-#include "Action.h"
-
 //Add ellipse Action class
 class AddEllipAction : public Action
 {

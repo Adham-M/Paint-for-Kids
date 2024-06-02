@@ -1,4 +1,4 @@
-#include "..\ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 AddTriAction::AddTriAction(ApplicationManager * pApp) :Action(pApp)

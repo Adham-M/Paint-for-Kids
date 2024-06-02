@@ -1,4 +1,4 @@
-#include"ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 DeleteAction::DeleteAction(ApplicationManager* pApp) :Action(pApp)

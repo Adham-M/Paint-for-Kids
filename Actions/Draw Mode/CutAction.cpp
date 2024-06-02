@@ -1,4 +1,4 @@
-#include "ApplicationManager.h"
+#include "../../ApplicationManager.h"
 
 
 CutAction::CutAction(ApplicationManager * pApp) :Action(pApp)

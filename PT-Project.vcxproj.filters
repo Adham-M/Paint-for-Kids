@@ -19,6 +19,18 @@
     <Filter Include="Application Manager">
       <UniqueIdentifier>{be3a4e10-d854-4bf8-9add-2f85904b4103}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Action Classes\Add Figure">
+      <UniqueIdentifier>{8b331a1a-757f-47ac-8d56-c1b53a186cd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action Classes\Save/Load">
+      <UniqueIdentifier>{41f673b4-efc4-4f4b-b306-c886eb2b36e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action Classes\Draw Mode">
+      <UniqueIdentifier>{44188470-7c04-4662-ad98-f4e6eb4fdee9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Action Classes\Play Mode">
+      <UniqueIdentifier>{87c7baac-2557-425a-8dfa-ebd59c694c80}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CMUgraphicsLib\auxil.cpp">
@@ -132,9 +144,6 @@
     <ClCompile Include="Figures\CRectangle.cpp">
       <Filter>Figures Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\AddRectAction.cpp">
-      <Filter>Action Classes</Filter>
-    </ClCompile>
     <ClCompile Include="GUI\Input.cpp">
       <Filter>GUI Classes</Filter>
     </ClCompile>
@@ -151,68 +160,83 @@
     <ClCompile Include="Figures\Cline.cpp">
       <Filter>Figures Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\AddLineAction.cpp">
-      <Filter>Action Classes</Filter>
-    </ClCompile>
     <ClCompile Include="Figures\CTriangle.cpp">
       <Filter>Figures Classes</Filter>
-    </ClCompile>
-    <ClCompile Include="Actions\AddTriAction.cpp">
-      <Filter>Action Classes</Filter>
     </ClCompile>
     <ClCompile Include="Figures\CRhombus.cpp">
       <Filter>Figures Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\AddRhombAction.cpp">
-      <Filter>Action Classes</Filter>
-    </ClCompile>
     <ClCompile Include="Figures\CEllipse.cpp">
       <Filter>Figures Classes</Filter>
     </ClCompile>
-    <ClCompile Include="Actions\AddEllipAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Add Figure\AddEllipAction.cpp">
+      <Filter>Action Classes\Add Figure</Filter>
     </ClCompile>
-    <ClCompile Include="SelectAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Add Figure\AddLineAction.cpp">
+      <Filter>Action Classes\Add Figure</Filter>
     </ClCompile>
-    <ClCompile Include="PickFigAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Add Figure\AddRectAction.cpp">
+      <Filter>Action Classes\Add Figure</Filter>
     </ClCompile>
-    <ClCompile Include="ToPlayMode.cpp" />
-    <ClCompile Include="PickColorAction.cpp" />
-    <ClCompile Include="SaveAction.cpp" />
-    <ClCompile Include="CopyAction.cpp" />
-    <ClCompile Include="PasteAction.cpp" />
-    <ClCompile Include="DeleteAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Add Figure\AddRhombAction.cpp">
+      <Filter>Action Classes\Add Figure</Filter>
     </ClCompile>
-    <ClCompile Include="ChangeFColorAction.cpp" />
-    <ClCompile Include="ChangeDColorAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Add Figure\AddTriAction.cpp">
+      <Filter>Action Classes\Add Figure</Filter>
     </ClCompile>
-    <ClCompile Include="LoadAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Save-Load\LoadAction.cpp">
+      <Filter>Action Classes\Save/Load</Filter>
     </ClCompile>
-    <ClCompile Include="CutAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Save-Load\SaveAction.cpp">
+      <Filter>Action Classes\Save/Load</Filter>
     </ClCompile>
-    <ClCompile Include="ToDrawMode.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Save-Load\SaveByTypeAction.cpp">
+      <Filter>Action Classes\Save/Load</Filter>
     </ClCompile>
-    <ClCompile Include="RestartAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Play mode\PickColorAction.cpp">
+      <Filter>Action Classes\Play Mode</Filter>
     </ClCompile>
-    <ClCompile Include="SaveByTypeAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Play mode\PickFigAction.cpp">
+      <Filter>Action Classes\Play Mode</Filter>
     </ClCompile>
-    <ClCompile Include="ExitAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Play mode\ToDrawMode.cpp">
+      <Filter>Action Classes\Play Mode</Filter>
     </ClCompile>
-    <ClCompile Include="ResizeAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Draw Mode\ChangeDColorAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClCompile>
-    <ClCompile Include="Set2BkOrFrntAction.cpp">
-      <Filter>Action Classes</Filter>
+    <ClCompile Include="Actions\Draw Mode\ChangeFColorAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\CopyAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\CutAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\DeleteAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\ExitAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\PasteAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\ResizeAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\RestartAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\SelectAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\Set2BkOrFrntAction.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
+    </ClCompile>
+    <ClCompile Include="Actions\Draw Mode\ToPlayMode.cpp">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -282,12 +306,6 @@
     <ClInclude Include="Figures\CRectangle.h">
       <Filter>Figures Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\Action.h">
-      <Filter>Action Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Actions\AddRectAction.h">
-      <Filter>Action Classes</Filter>
-    </ClInclude>
     <ClInclude Include="GUI\Input.h">
       <Filter>GUI Classes</Filter>
     </ClInclude>
@@ -304,68 +322,86 @@
     <ClInclude Include="Figures\CLine.h">
       <Filter>Figures Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\AddLineAction.h">
-      <Filter>Action Classes</Filter>
-    </ClInclude>
     <ClInclude Include="Figures\CTriangle.h">
       <Filter>Figures Classes</Filter>
-    </ClInclude>
-    <ClInclude Include="Actions\AddTriAction.h">
-      <Filter>Action Classes</Filter>
     </ClInclude>
     <ClInclude Include="Figures\CRhombus.h">
       <Filter>Figures Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\AddRhombAction.h">
-      <Filter>Action Classes</Filter>
-    </ClInclude>
     <ClInclude Include="Figures\CEllipse.h">
       <Filter>Figures Classes</Filter>
     </ClInclude>
-    <ClInclude Include="Actions\AddEllipAction.h">
+    <ClInclude Include="Actions\Add Figure\AddEllipAction.h">
+      <Filter>Action Classes\Add Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Add Figure\AddLineAction.h">
+      <Filter>Action Classes\Add Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Add Figure\AddRectAction.h">
+      <Filter>Action Classes\Add Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Add Figure\AddRhombAction.h">
+      <Filter>Action Classes\Add Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Add Figure\AddTriAction.h">
+      <Filter>Action Classes\Add Figure</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Save-Load\LoadAction.h">
+      <Filter>Action Classes\Save/Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Save-Load\SaveAction.h">
+      <Filter>Action Classes\Save/Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Save-Load\SaveByTypeAction.h">
+      <Filter>Action Classes\Save/Load</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Play mode\PickColorAction.h">
+      <Filter>Action Classes\Play Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Play mode\PickFigAction.h">
+      <Filter>Action Classes\Play Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Play mode\ToDrawMode.h">
+      <Filter>Action Classes\Play Mode</Filter>
+    </ClInclude>
+    <ClInclude Include="Actions\Action.h">
       <Filter>Action Classes</Filter>
     </ClInclude>
-    <ClInclude Include="SelectAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\ChangeDColorAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="PickFigAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\ChangeFColorAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="ToPlayMode.h" />
-    <ClInclude Include="PickColorAction.h" />
-    <ClInclude Include="SaveAction.h" />
-    <ClInclude Include="CopyAction.h" />
-    <ClInclude Include="PasteAction.h" />
-    <ClInclude Include="DeleteAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\CopyAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="ChangeDColorAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\CutAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="LoadAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\DeleteAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="ChangeFColorAction.h" />
-    <ClInclude Include="CutAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\ExitAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="ToDrawMode.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\PasteAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="RestartAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\ResizeAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="SaveByTypeAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\RestartAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="ExitAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\SelectAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="ResizeAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\Set2BkOrFrntAction.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
-    <ClInclude Include="Set2BkOrFrntAction.h">
-      <Filter>Action Classes</Filter>
+    <ClInclude Include="Actions\Draw Mode\ToPlayMode.h">
+      <Filter>Action Classes\Draw Mode</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
